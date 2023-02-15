@@ -60,7 +60,7 @@
                                                      
           <button id="submit" type="submit">Submit</button>
         </form>
-        <script src="./index.js"></script>
+        <script src="[./index.js](https://github.com/sravani0504/registration-form/commit/223fecd82893967953dff9d351773ef699313289)"></script>
       </div>
                                 
       <div class="fillers">
