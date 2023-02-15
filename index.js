@@ -12,7 +12,7 @@ function check_the_email(email) {
   if (email.value.includes("@") && email.value.includes(".")) {
     email.setCustomValidity("");
   } else {
-    email.setCustomValidity("Invalid Email");
+    email.setCustomValidity("Invalid Email!");
     email.reportValidity();
   }
 }
@@ -82,7 +82,7 @@ create_list_of_object = () => {
 
 show_the_table = () => {
   var table = document.getElementById("user-table");
-  var objet_of_entries = user_entries;
+  var object_of_entries = user_entries;
   var word = `\n<tr>
                     <th>Name</th>
                     <th>Email</th>
@@ -90,7 +90,7 @@ show_the_table = () => {
                     <th>Dob</th>
                     <th>Accepted terms?</th>
                 </tr>`;
-  objet_of_entries.forEach(entrt =>{
+  object_of_entries.forEach(entry =>{
     word += `\n<tr>
                      <td>${entry.name}</td>
                      <td>${entry.email}</td>
