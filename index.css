@@ -14,8 +14,8 @@
     font-weight: bolder;
     margin-left: 20px;
     padding-left: 22px;
-  
-  
+    
+    
 }
 .registration{
     text-align: center;
@@ -26,7 +26,9 @@
 .sub-container input{
     border: none;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    
 }
+
 
 .sub-container{
     margin-top: 25px;
@@ -74,13 +76,17 @@
 }
 input::placeholder{
     text-align: center;
+    
 }
 input{
     background-color: #F0F1F4;
     text-indent: 10px;
+    
+    
 }
 #check-box{
     margin-left: 44px;
+    
 }
 table{
     margin: auto;
