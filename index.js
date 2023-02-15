@@ -43,9 +43,11 @@ var tick = document.getElementById("check-box");
 var email = document.getElementById("email");
 var name_of_the_user = document.getElementById("name");
 
-email.addEventlistener("input", () => check_the_email(email));
+email.addEventListener("input", () => check_the_email(email));
 dob.addEventListener("input", () => Check_the_dob(dob));
-name_of_the_user.addEventListener("input", () => check_the_name(name_of_the_user));
+name_of_the_user.addEventListener("input", () => 
+  check_the_name(name_of_the_user)
+);
 tick.addEventListener("input", () => check_the_tick(tick));
 
 var get_form = document.getElementById("user-form");
@@ -81,21 +83,21 @@ create_list_of_object = () => {
 show_the_table = () => {
   var table = document.getElementById("user-table");
   var objet_of_entries = user_entries;
-  var word = '\n<tr>
+  var word = `\n<tr>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Password</th>
                     <th>Dob</th>
-                    <Accepted terms?</th>
-                </tr>';
+                    <th>Accepted terms?</th>
+                </tr>`;
   objet_of_entries.forEach(entrt =>{
-    word += '\n<tr>
+    word += `\n<tr>
                      <td>${entry.name}</td>
                      <td>${entry.email}</td>
                      <td>${entry.password}</td>
                      <td>${entry.dob}</td>
                      <td>${entry.checked}</td>
-                 </tr>';
+                 </tr>`;
   })
   table.innerHTML = word;
 };
@@ -104,7 +106,7 @@ get_form.addEventListener("submit",(e) => {
   e.preventDefault();
   var agree_the_condition = tick.checked;
   if (agree_the_condition) {
-    var object_list = create_list_of_objects();
+    var object_list = create_list_of_object();
     user_entries.push(object_list);
     localStorage.setItem("user_entries",JSON.stringify(user_entries));
   }
