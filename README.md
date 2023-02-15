@@ -26,12 +26,12 @@
         <div class="sub-container">
           <label for="email">Email</label>
           <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            placeholder="Enter email"
-          />
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Enter email"
+        />
         </div>
                      
         <div class="sub-container">
@@ -53,7 +53,7 @@
         <div class="sub-container">
           <input type="checkbox" name="check-box" required id="check-box" />
           <label for="check-box" class="accept-text"
-            >Accept Terms and Conditions</label
+                 >Accept Terms and Conditions</label
           >
         </div>
                                                      
