@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title> 
     
-    <link rel="stylesheet" href="index.css" /> 
+    <link rel="stylesheet" href="[index.css](https://github.com/sravani0504/registration-form/commit/0bd6e11c9bf5ae13f7662c1442810ec4a9156b5a)" /> 
   </head>
   <body>
     <div class="container">
