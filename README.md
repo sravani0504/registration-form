@@ -7,6 +7,8 @@
     <title>Registration Form</title> 
     
     <link rel="stylesheet" href="index.css" /> 
+    <link rel="stylesheet" href="index.js" />
+    
   </head>
   <body>
     <div class="container">
