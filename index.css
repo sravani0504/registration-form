@@ -52,11 +52,11 @@
 #password{
     width: 200px;
     height: 45px;
-    margin-left: 106px;
+    margin-left: 128px;
     border-radius: 5px;
 }
 #dob{
-    width: 128px;
+    width: 200px;
     height: 45px;
     margin-left: 80px;
     border-radius: 5px;
