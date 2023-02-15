@@ -41,6 +41,7 @@ dob = document.getElementById("dob");
 var password = document.getElementById("password");
 var tick = document.getElementById("check-box");
 var email = document.getElementById("email");
+var name_of_the_user = document.getElementById("name");
 
 email.addEventlistener("input", () => check_the_email(email));
 dob.addEventListener("input", () => Check_the_dob(dob));
@@ -79,16 +80,16 @@ create_list_of_object = () => {
 
 show_the_table = () => {
   var table = document.getElementById("user-table");
-  var object_of_entries = user_entries;
+  var objet_of_entries = user_entries;
   var word = '\n<tr>
-                     <th>Name</th>
-                     <th>Email</th>
-                     <th>Password</th>
-                     <th>Dob</th>
-                     <Accepted terms?</th>
-                 </tr>';
-  object_of_entries.forEach(entrt =>{
-    word +='\n<tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Dob</th>
+                    <Accepted terms?</th>
+                </tr>';
+  objet_of_entries.forEach(entrt =>{
+    word += '\n<tr>
                      <td>${entry.name}</td>
                      <td>${entry.email}</td>
                      <td>${entry.password}</td>
