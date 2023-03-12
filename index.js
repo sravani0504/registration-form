@@ -7,9 +7,8 @@ function Check_the_dob(dob) {
     dob.setCustomValidity("");
   }
 }
-
 function check_the_email(email) {
-  if (email.value.includes("@") && email.value.includes(".")) {
+  if(email.value.includes("@") && email.value.includes(".")) {
     email.setCustomValidity("");
   } else {
     email.setCustomValidity("Invalid Email!");
@@ -21,7 +20,7 @@ function check_the_name(name_of_the_user) {
   if (name_of_the_user.value.length < 3) {
     name_of_the_user.setCustomValidity(
       "Name should be atleast three characters!"
-    );
+     );
     name_of_the_user.reportValidity();
   } else {
     name_of_the_user.setCustomValidity("");
@@ -52,11 +51,11 @@ tick.addEventListener("input", () => check_the_tick(tick));
 
 var get_form = document.getElementById("user-form");
 
-var user_entries = [];
+var user_entries =[];
 
 enter_to_the_table = () => {
   var object_list = localStorage.getItem("user_entries");
-  if (!object_list) {
+  if(!object_list) {
     user_entries = [];
   } else {
     user_entries = JSON.parse(object_list);
@@ -67,7 +66,7 @@ user_entries = enter_to_the_table();
 
 create_list_of_object = () => {
   var check = true;
-  if (!tick.checked) {
+  if(!tick.checked) {
     check = false;
   }
   var object_list = {
@@ -80,16 +79,16 @@ create_list_of_object = () => {
   return object_list;
 };
 
-show_the_table = () => {
+show_the_table= () => {
   var table = document.getElementById("user-table");
   var object_of_entries = user_entries;
   var word = `\n<tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Password</th>
-                    <th>Dob</th>
-                    <th>Accepted terms?</th>
-                </tr>`;
+                     <th>Name</th>
+                     <th>Email</th>
+                     <th>Password</th>
+                     <th>Dob</th>
+                     <th>Accepted terms?</th>
+               </tr>`;
   object_of_entries.forEach(entry =>{
     word += `\n<tr>
                      <td>${entry.name}</td>
@@ -97,12 +96,12 @@ show_the_table = () => {
                      <td>${entry.password}</td>
                      <td>${entry.dob}</td>
                      <td>${entry.checked}</td>
-                 </tr>`;
+               </tr>`;
   })
   table.innerHTML = word;
 };
 
-get_form.addEventListener("submit",(e) => {
+get_form.addEventListener("submit", (e) => {
   e.preventDefault();
   var agree_the_condition = tick.checked;
   if (agree_the_condition) {
