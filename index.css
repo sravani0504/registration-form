@@ -74,14 +74,13 @@
     border-radius: 5px;
     border: #22BC53;
 }
-input::placeholder {
+input::placeholder{
     text-align: center;
 }
 input{
     background-color: #F0F1F4;
     text-indent: 10px;
-    
-    
+        
 }
 #check-box{
     margin-left: 44px;
@@ -98,7 +97,7 @@ tr{
     width: 100%;
 }
 td{
-    border: rgba(0,0,0,0.3) 1px solid;
+    border: rgba(0, 0, 0, 0.3) 1px solid;
     padding:0px 10px 0px 10px;
 }
 th{
