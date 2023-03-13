@@ -7,7 +7,7 @@ function Check_the_dob(dob) {
     dob.setCustomValidity("");
   }
 }
-function check_the_email(email) {
+/*function check_the_email(email) {
   if(email.value.includes("@") && email.value.includes(".")) {
     email.setCustomValidity("");
   } else {
@@ -34,7 +34,7 @@ function check_the_tick(tick) {
   } else {
     tick.setCustomValidity("");
   }
-}
+}*/
 
 dob = document.getElementById("dob");
 var password = document.getElementById("password");
