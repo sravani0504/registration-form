@@ -102,7 +102,7 @@ show_the_table= () => {
 };
 
 get_form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  /*e.preventDefault();*/
   var agree_the_condition = tick.checked;
   if (agree_the_condition) {
     var object_list = create_list_of_object();
