@@ -7,7 +7,7 @@ function Check_the_dob(dob) {
     dob.setCustomValidity("");
   }
 }
-/*function check_the_email(email) {
+function check_the_email(email) {
   if(email.value.includes("@") && email.value.includes(".")) {
     email.setCustomValidity("");
   } else {
@@ -34,7 +34,7 @@ function check_the_tick(tick) {
   } else {
     tick.setCustomValidity("");
   }
-}*/
+}
 
 dob = document.getElementById("dob");
 var password = document.getElementById("password");
@@ -102,13 +102,16 @@ show_the_table= () => {
 };
 
 get_form.addEventListener("submit", (e) => {
-  /*e.preventDefault();*/
-  var agree_the_condition = tick.checked;
-  if (agree_the_condition) {
+  e.preventDefault();
+  /*var agree_the_condition = tick.checked;*/
+  /*if (agree_the_condition) {
     var object_list = create_list_of_object();
     user_entries.push(object_list);
     localStorage.setItem("user_entries",JSON.stringify(user_entries));
-  }
+  }*/
+  var object_list = create_list_of_object();
+  user_entries.push(object_list);
+  localStorage.setItem("user_entries",JSON.stringify(user_entries));
   show_the_table();
 });
 
